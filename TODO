@@ -1,6 +1,7 @@
 ERAY:
 Date: 02/20/2006
 todo: I should get rid of this magical constant 1.5, we keep getting Seg Faults because of this:)
+
 Description:      if (diff>0)
                         arraysize=(arraysize+diff)*1.5;
                 diff=MaxExons;
