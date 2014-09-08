@@ -22,10 +22,7 @@ Options:
 
 		Ex: -exonfile=default , -exonfile=NPIP
 
--update       : Update the alignment/sequence coordinates On/Off.
-
-                Set to off if you want to use the alignment coordinates in the tablefile.
-		- Works only with -program=table
+-update       : Update the alignment/sequence coordinates On/Off. Set to off if you want to use the alignment coordinates in the tablefile. Works only with -program=table
 
 -column	      : Toggle Single/Multiple File Output
 
