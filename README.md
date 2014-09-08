@@ -13,7 +13,6 @@ Usage: mam [Alignment File] [option1][=on/=off] [option2=on/off] ... [option n=o
 
 Note:
 	MaM saves its configuration in $HOME/.mam-config file. Run MaM
-
 	once to create the default configuration file, and edit it if necessary.
 
 
@@ -26,7 +25,6 @@ Options:
 -update       : Update the alignment/sequence coordinates On/Off.
 
                 Set to off if you want to use the alignment coordinates in the tablefile.
-
 		- Works only with -program=table
 
 -column	      : Toggle Single/Multiple File Output
@@ -44,15 +42,10 @@ Options:
 -program      : Select program. One of:
 
 		-program=crossmatch
-
 		-program=repeatmasker
-
 		-program=sim4
-
 		-program=table
-
 		-program=convert
-
 		-program=none (to be able to run -alnstats and/or -consensus alone)
 
 -slider	      : Toggle Slider On/Off
@@ -60,9 +53,7 @@ Options:
 -pc	      : Select One of:
 
 		Pairwise Deletion (-pc=p),
-
 		Complete Deletion (-pc=c),
-
 		Parsimony Score   (-pc=s)
 
 -sw	      : Select Slide Width (-sw=10)
@@ -156,15 +147,12 @@ Input/Output:
 
 
 MaM supports Clustal, MEGA, FASTA, NEXUS, and PHYLIP input formats, and
-
 Clustal, MEGA, NEXUS, FASTA, PHYLIP, HTML and consensus identity dot representation
-
 output formats. 
 
 
 
 For more explanation for the program, options, and some examples, please
-
 visit: http://mam-bio.sourceforge.net
 
 
