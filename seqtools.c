@@ -1585,6 +1585,16 @@ void alnStats(char alnFileName[]){
   for (i=0;i<seqTot;i++){
       fprintf(stats, "%20s%10d%7.2f\n", names[i], sequence_len(seqs[i]), gc_cont(seqs[i]));
   }
+
+  if (seqTot == 2){
+    fprintf(stats, "\n Mutations:\n");
+    fprintf(stats, "Pos\t%s\t%s\n", names[0], names[1]);
+    for (j=0;j<maxLen;j++){
+      if (seqs[0][j] != seqs[1][j]){
+	fprintf(stats, "%d\t%c\t%c\n", (j+1), seqs[0][j], seqs[1][j]);
+      }
+    }
+  }
 }
 
 int sequence_len(char *s){

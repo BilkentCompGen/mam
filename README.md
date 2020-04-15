@@ -6,8 +6,8 @@
 	[    calkan@gmail.com   ]
 	[  eraytuzun@gmail.com  ]
 
-	Last Update: March 20, 2006
-	Version 1.4.2
+	Last Update: April 14, 2020
+	Version 1.4.3
 
 Usage: mam [Alignment File] [option1][=on/=off] [option2=on/off] ... [option n=on/off]
 

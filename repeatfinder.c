@@ -6,7 +6,7 @@
 	[   calkan@gmail.com   ]
 	[  eraytuzun@gmail.com ]
 
-	Last Update: March 20, 2006
+	Last Update: April 14, 2020
 	Summary: parsimony score (Mar 8, 2005)
 	Summary: tablefile check moved from processOutOptions to readtablefile (Aug 10, 2005)
 	Summary: Length information printed (Aug 25, 2005)
@@ -222,7 +222,7 @@ int main(int argc, char **argv){
     
       if (expos==NULL||expos2==NULL||temparray==NULL){
 	printf("null array bug arraysize:%d diff:%d\n", arraysize,diff);
-	printf("name: %s, size %d\n", names[i-1], strlen(seqs[i-1]));
+	printf("name: %s, size %d\n", names[i-1], (int) strlen(seqs[i-1]));
 	return 0;
       }
       if (!NOUPDATE && program == TABLE){
@@ -1291,15 +1291,15 @@ bool checkToggles(bool verbose){
 void parseParams(int argc, char **argv){
 
   int i, j;
-  int cnt;
+  
   char param[20];
 
   if (!strcmp(argv[1], "-h"))
     help(argv[0],0);
 
   if (!strcmp(argv[1], "-v")){
-    printf("MaM version 1.4.2\n");
-    printf("Latest update: 03/20/2006\n");
+    printf("MaM version 1.4.3\n");
+    printf("Latest update: 04/14/2020\n");
     exit(0);
   }
   
@@ -1312,7 +1312,7 @@ void parseParams(int argc, char **argv){
   strcpy(inFile, argv[1]); // Alignment File Name
   
   i = 2;
-  cnt = 0;
+  //cnt = 0;
   strcpy(tablefile, "default");
   strcpy(PC, "P");
   strcpy(slidewindow, "5");
